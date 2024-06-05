@@ -1,4 +1,4 @@
-document.addEventListener('DOMContentLoaded', funtion(){
+document.addEventListener('DOMContentLoaded', funtion() {
     const buttons = document.querySelectorAll('[data-tab-button]');
     const tabsContainer = document.querySelectorAll('[data-tab-id]');
 
@@ -10,7 +10,6 @@ document.addEventListener('DOMContentLoaded', funtion(){
             aba.classList.add('shows__list--is-active');
             removeBotaoAtivo();
             botao.target.classList.add('shows__tabs__button--is-active');
-
         })
     }
 })
