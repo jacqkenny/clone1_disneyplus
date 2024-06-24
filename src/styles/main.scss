@@ -43,14 +43,26 @@ body {
 
 .text--big {
     @include text(18px);
+
+    @media (max-width: 768px) {
+        @include text(15px);
+    }
 }
 
-.tex {
+.text {
     @include text;
+
+    @media (max-width: 768px) {
+        @include text(14px);
+    }
 }
 
 .text--small {
     @include text(12px);
+
+    @media (max-width: 768px) {
+        @include text(11px);
+    }
 }
 
 .link-text {
@@ -65,10 +77,18 @@ body {
 
 .title {
     @include title;
+
+    @media (max-width: 768px) {
+        @include title(24px);
+    }
 }
 
 .title--small {
     @include title(28px);
+
+    @media (max-width: 768px) {
+        @include title(22px);
+    }
 }
 
 .button {
@@ -154,7 +174,7 @@ body {
 
             @media (max-width: 768px) {
                 position: relative;
-                feft: 0;
+                left: 0;
                 width: 100%;
             }
         }
