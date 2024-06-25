@@ -6,7 +6,7 @@
         margin-bottom: 24px;
     }
 
-    &__question {
+    &__questions {
         &__item {
             background-color: #13151d;
             margin-bottom: 16px;
@@ -19,7 +19,7 @@
                 cursor: pointer;
                 position: relative;
 
-                &::after{
+                &::after {
                     content: '+';
                     position: absolute;
                     top: 0;
@@ -31,7 +31,7 @@
                 }
             }
 
-            &__answer{
+            &__answer {
                 height: 0;
                 overflow: hidden;
                 padding: 0 24px;
@@ -39,11 +39,11 @@
             }
 
             &--is-open {
-                faq__questions__it__question::after {
+                .faq__questions__it__question::after {
                     content:'-';
                 }
 
-                .faq__questions__it__answer {
+                .faq__questions__item__answer {
                     heigth: auto;
                     padding-bottom: 24px;
                     transition: height, .5s ease;

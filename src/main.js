@@ -1,6 +1,6 @@
-document.addEventListener('DOMContentLoaded', funtion() {
+document.addEventListener('DOMContentLoaded', function() {
     const buttons = document.querySelectorAll('[data-tab-button]');
-    const questions = document.querySelectorAll('[data-faq-questions]');
+    const questions = document.querySelectorAll('[data-faq-question]');
 
     const heroSelection = document.querySelector('.hero');
     const alturaHero = heroSection.clientHeight;
@@ -16,10 +16,10 @@ document.addEventListener('DOMContentLoaded', funtion() {
     })
 
     // Seção de atrações, programação das abas
-    for (let i = 0; i< buttons.length; i++) {
+    for (let i = 0; i < buttons.length; i++) {
         buttons[i].addEventListener('click', function(botao) {
             const abaAlvo = botao.target.dataset.tabButton;
-            const aba = document.querySelector(`[data-tab-id=${abaAlvo}]`)
+            const aba = document.querySelector(`[data-tab-id=${abaAlvo}]`);
             escondeTodasAbas();
             aba.classList.add('shows__list--is-active');
             removeBotaoAtivo();
@@ -42,8 +42,6 @@ function exibeElementosDoHeader() {
     const header = document.querySelector('header');
     header.classList.remove('header--is--hidden');
 }
-
-
 
 function abreOuFechaResposta(elemento) {
     const classe = 'faq__questions__item--is-open';

@@ -8,13 +8,13 @@
 @use 'header';
 
 @font-face {
-    font-family: avenir;
+    font-family: Avenir;
     src: url(../../assets/fonts/Avenir-Regular.woff2);
     font-weight: 400;
 }
 
 @font-face {
-    font-family: avenir;
+    font-family: Avenir;
     src: url(../../assets/fonts/Avenir-Bold.woff2);
     font-weight: 700;
 }
@@ -68,7 +68,7 @@ body {
 .link-text {
     @include text(18px);
     color: variaveis.$corTextoSecundario;
-    text-decoration: underline
+    text-decoration: underline;
 }
 
 .title--big {
