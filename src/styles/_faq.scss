@@ -39,12 +39,12 @@
             }
 
             &--is-open {
-                .faq__questions__it__question::after {
-                    content:'-';
+                .faq__questions__item__question::after {
+                    content: '-';
                 }
-
+                
                 .faq__questions__item__answer {
-                    heigth: auto;
+                    height: auto;
                     padding-bottom: 24px;
                     transition: height, .5s ease;
                 }

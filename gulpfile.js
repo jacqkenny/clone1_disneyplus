@@ -5,8 +5,8 @@ const uglify = require('gulp-uglify');
 
 function scripts() {
     return gulp.src('./src/scripts/*.js')
-    .pipe(uglify())
-    .pipe(gulp.dest('./dist/js'))
+        .pipe(uglify())
+        .pipe(gulp.dest('./dist/js'))
 }
 
 function styles() {
@@ -17,8 +17,8 @@ function styles() {
 
 function images() {
     return gulp.src('./src/images/**/*')
-    .pipe(imagemin())
-    .pipe(gulp.dest('./dist/images'));
+        .pipe(imagemin())
+        .pipe(gulp.dest('./dist/images'));
 }
 
 exports.default = gulp.parallel(styles, images, scripts);
